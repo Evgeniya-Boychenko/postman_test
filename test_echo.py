@@ -34,7 +34,7 @@ def test_delete_params():
 def test_put_():
     payload = {"id": 1, "title": "Updated Task", "status": "done"}
     response = requests.put(f"{BASE_URL}/put", json = payload)
-    assert response.status_code == 500, "Сломала для проверки CI"
+    assert response.status_code == 200, "Ожидали ответ 200"
 
 
 
